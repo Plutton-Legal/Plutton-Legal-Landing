@@ -1,0 +1,422 @@
+import type { Lang } from "@/types/i18n";
+
+const es = {
+  header: {
+    callNow: "Llamar",
+    navHowItWorks: "Cómo Funciona",
+    navReviews: "Reseñas",
+    navFaq: "Preguntas",
+  },
+
+  hero: {
+    heading: "Mejor Crédito.\nMejor Vida.",
+    subtext:
+      "Los errores en tu reporte de crédito te cuestan dinero cada mes. Nosotros los encontramos y los disputamos.",
+    cta: "Hablar con un Especialista — Gratis",
+    subCta: "Consulta gratis · Sin compromiso · 15 minutos",
+    whatsappLink: "¿Prefieres escribir? WhatsApp",
+    imageAlt:
+      "Especialista de BCBL asesorando a un cliente sobre su reporte de crédito",
+  },
+
+  pullQuote: {
+    // PLACEHOLDER — reemplazar con copia aprobada
+    quote:
+      "No tienes que avergonzarte de tu crédito. Solo tienes que decidir arreglarlo.",
+  },
+
+  explainer: {
+    heading: "¿Qué contiene tu reporte de crédito?",
+    p1: "Tu reporte de crédito es un registro de cómo has pedido prestado y pagado dinero: tarjetas, préstamos, hipotecas y más. Cada prestamista puede reportar a uno o más de los tres burós principales: Equifax, Experian y TransUnion.",
+    p2: "Los reportes contienen errores con mucha más frecuencia de lo que la gente cree: cuentas que no son tuyas, saldos incorrectos o pagos marcados tarde cuando no lo estaban. La ley federal te da el derecho de disputar cualquier información inexacta, incompleta o no verificable.",
+  },
+
+  howItWorks: {
+    heading: "Cómo Funciona",
+    steps: [
+      {
+        title: "Revisamos tu reporte",
+        body: "Leemos los tres burós para encontrar errores, duplicados y elementos desactualizados que no deberían estar ahí.",
+      },
+      {
+        title: "Disputamos lo incorrecto",
+        body: "Disputas formales bajo la ley federal, con seguimiento de cada respuesta hasta que se resuelva.",
+      },
+      {
+        title: "Te ayudamos a crecer",
+        body: "Orientación para reconstruir historial positivo junto al proceso de disputa para que los resultados sean duraderos.",
+      },
+    ],
+  },
+
+  testimonials: {
+    heading: "Lo Que Dicen Nuestros Clientes",
+    // PLACEHOLDER — reemplazar con reseñas reales antes del lanzamiento
+    items: [
+      {
+        quote:
+          "Me rechazaron en apartamentos por dos años. Tres meses después de trabajar con BCBL firmé el contrato del lugar que realmente quería.",
+        name: "Marcus T.",
+        location: "Atlanta, GA",
+        initial: "M",
+      },
+      {
+        quote:
+          "Por fin nos aprobaron la hipoteca. Después de años que nos decían que era imposible, cerramos nuestra primera casa el mes que viene.",
+        name: "Denise R.",
+        location: "Houston, TX",
+        initial: "D",
+      },
+      {
+        quote:
+          "Necesitaba un auto para ir al trabajo y no podía conseguir financiamiento. En pocos meses con BCBL salí del lote manejando.",
+        name: "James V.",
+        location: "Phoenix, AZ",
+        initial: "J",
+      },
+    ],
+  },
+
+  faq: {
+    heading: "Preguntas Frecuentes",
+    items: [
+      {
+        q: "¿Cuánto tiempo tarda el proceso?",
+        a: "Cada expediente es diferente. La mayoría de los clientes comienza a ver cambios en 30–90 días. El proceso completo suele durar entre 6 y 12 meses.",
+      },
+      {
+        q: "¿La reparación de crédito es legal?",
+        a: "Absolutamente. La Ley de Informes de Crédito Justos (FCRA) te da el derecho de disputar información inexacta, incompleta o no verificable en tu reporte.",
+      },
+      {
+        q: "¿Qué incluye el servicio?",
+        a: "Revisamos los tres burós, identificamos elementos disputables, redactamos y presentamos cartas de disputa, y le damos seguimiento hasta que cada elemento se resuelva.",
+      },
+      {
+        q: "¿Cuánto cuesta?",
+        a: "Te explicamos nuestra estructura de honorarios en la consulta gratuita. Por ley federal no podemos cobrar antes de realizar el servicio.",
+      },
+      {
+        q: "¿Pueden eliminar información negativa correcta?",
+        a: "No — y cualquier empresa que lo prometa no está siendo honesta. Disputamos información inexacta, incompleta, desactualizada o no verificable. Lo que sí hacemos es asegurarnos de que tu reporte refleje solo la verdad.",
+      },
+    ],
+  },
+
+  consultationForm: {
+    heading: "Solicita Tu Consulta Gratis",
+    fields: {
+      name: { label: "Nombre Completo", placeholder: "María González" },
+      email: { label: "Correo Electrónico", placeholder: "maria@ejemplo.com" },
+      phone: { label: "Teléfono", placeholder: "Ej: +1 (555) 123-4567" },
+      cityState: { label: "Ciudad y Estado", placeholder: "Miami, FL" },
+      creditScore: {
+        label: "Puntaje de Crédito Aproximado",
+        placeholder: "Selecciona un rango",
+        options: [
+          "Selecciona un rango",
+          "300–499 (Muy Malo)",
+          "500–579 (Malo)",
+          "580–669 (Regular)",
+          "670–739 (Bueno)",
+          "740–799 (Muy Bueno)",
+          "800–850 (Excelente)",
+          "No sé",
+        ],
+      },
+      income: {
+        label: "Ingreso Mensual Aproximado",
+        placeholder: "Selecciona un rango",
+        options: [
+          "Selecciona un rango",
+          "Menos de $2,000",
+          "$2,000 – $4,000",
+          "$4,000 – $6,000",
+          "$6,000 – $8,000",
+          "Más de $8,000",
+        ],
+      },
+      goals: {
+        label: "¿Cuáles Son Tus Principales Objetivos?",
+        placeholder:
+          "Ej: Comprar una casa, obtener una tarjeta mejor, refinanciar un auto...",
+      },
+      comments: {
+        label: "Comentarios Adicionales",
+        placeholder: "Cuéntanos más sobre tu situación actual...",
+      },
+    },
+    consent1:
+      "Acepto la Política de Privacidad y los Términos de Servicio, y autorizo el uso de mis datos para evaluación y seguimiento.",
+    consent2:
+      "Acepto recibir mensajes SMS de BCBL sobre mi caso de reparación de crédito. Aprox. 4 mensajes/mes. Pueden aplicar tarifas. Responde STOP para cancelar, HELP para ayuda. El consentimiento NO es condición del servicio. Ver Términos SMS y Privacidad.",
+    honeypotLabel: "Si eres humano, deja este campo vacío",
+    submit: "Solicitar Consulta Gratis →",
+    loading: "Enviando…",
+    successTitle: "¡Recibimos tu solicitud!",
+    successBody:
+      "Un especialista te contactará dentro de un día hábil. Si deseas hablar con alguien ahora mismo, llámanos o escríbenos.",
+    errors: {
+      name: "Por favor ingresa tu nombre completo.",
+      email: "Por favor ingresa un correo válido.",
+      phone: "Por favor ingresa un teléfono válido.",
+      goals: "Por favor describe tus objetivos.",
+      consent1: "Debes aceptar los términos para continuar.",
+    },
+    paymentNote: "Pagos seguros. Tarjetas aceptadas:",
+    paymentFine:
+      "Aceptamos Visa y Mastercard. No aceptamos American Express, Discover ni Maestro.",
+    orCall: "O llámanos:",
+  },
+
+  footer: {
+    columns: {
+      contact: {
+        heading: "Contacto",
+        hours: "Lun–Vie, 9:00 AM–6:00 PM EST",
+      },
+      legal: {
+        heading: "Legal",
+        links: [
+          { label: "Portal de Clientes", href: "#" },
+          { label: "Términos de Servicio", href: "#" },
+          { label: "Política de Reembolso", href: "#" },
+          { label: "Política de Privacidad", href: "#" },
+          { label: "Términos SMS", href: "#" },
+        ],
+      },
+      payments: {
+        heading: "Pagos Aceptados",
+        note: "Visa y Mastercard. No aceptamos American Express, Discover ni Maestro.",
+      },
+    },
+    bottomLinks: [
+      { label: "Portal de Clientes", href: "#" },
+      { label: "Términos de Servicio", href: "#" },
+      { label: "Política de Reembolso", href: "#" },
+      { label: "Política de Privacidad", href: "#" },
+      { label: "Términos SMS", href: "#" },
+      { label: "Volver arriba", href: "#" },
+    ],
+    copyright: "© 2026 BCBL. Todos los derechos reservados.",
+    disclaimer:
+      "La mejora de puntaje depende de factores individuales. No eliminamos información precisa, vigente y verificable.",
+    sms: "Programa SMS: BCBL Credit Repair Alerts. STOP=cancelar | HELP=ayuda. Pueden aplicar tarifas. ~4/mes.",
+  },
+
+  stickyBar: {
+    call: "Llamar",
+    text: "Escribir",
+  },
+};
+
+const en: typeof es = {
+  header: {
+    callNow: "Call Now",
+    navHowItWorks: "How It Works",
+    navReviews: "Reviews",
+    navFaq: "FAQ",
+  },
+
+  hero: {
+    heading: "Better Credit.\nBetter Living.",
+    subtext:
+      "Errors on your credit report are costing you money every month. We find them, and we fight them.",
+    cta: "Talk to a Specialist — Free",
+    subCta: "Free consultation · No obligation · 15 minutes",
+    whatsappLink: "Prefer to text? WhatsApp us",
+    imageAlt: "BCBL specialist consulting with a client about their credit report",
+  },
+
+  pullQuote: {
+    // PLACEHOLDER — replace with final approved copy
+    quote:
+      "You don't have to be embarrassed about your credit. You just have to decide to fix it.",
+  },
+
+  explainer: {
+    heading: "What's actually on your credit report?",
+    p1: "Your credit report is a record of how you've borrowed and repaid money — credit cards, loans, mortgages, and more. Every lender you've worked with can report to one or more of the three major bureaus: Equifax, Experian, and TransUnion.",
+    p2: "Reports contain errors far more often than most people realize — accounts that aren't yours, balances reported incorrectly, or payments marked late when they weren't. Federal law gives you the right to challenge anything that is inaccurate, incomplete, or unverifiable.",
+  },
+
+  howItWorks: {
+    heading: "How It Works",
+    steps: [
+      {
+        title: "We review your report",
+        body: "A full read of all three bureaus to find errors, duplicates, and outdated items that shouldn't be there.",
+      },
+      {
+        title: "We challenge what's wrong",
+        body: "Formal disputes filed under federal law, with every response tracked and followed up until resolved.",
+      },
+      {
+        title: "We help you build",
+        body: "Guidance on rebuilding positive history alongside the dispute process so the results hold long-term.",
+      },
+    ],
+  },
+
+  testimonials: {
+    heading: "What Our Clients Say",
+    // PLACEHOLDER — replace all three with real client reviews before launch
+    items: [
+      {
+        quote:
+          "I had been turned down for apartments for two years. Three months after working with BCBL I signed a lease on the place I actually wanted.",
+        name: "Marcus T.",
+        location: "Atlanta, GA",
+        initial: "M",
+      },
+      {
+        quote:
+          "We finally got approved for our mortgage. After years of being told it wasn't possible, we're closing on our first home next month.",
+        name: "Denise R.",
+        location: "Houston, TX",
+        initial: "D",
+      },
+      {
+        quote:
+          "I needed a car to get to work and couldn't get financing anywhere. Within a few months of working with BCBL I drove off the lot.",
+        name: "James V.",
+        location: "Phoenix, AZ",
+        initial: "J",
+      },
+    ],
+  },
+
+  faq: {
+    heading: "Common Questions",
+    items: [
+      {
+        q: "How long does the process take?",
+        a: "Every credit file is different. Most clients begin to see changes within 30–90 days of their first dispute round. The full process typically runs 6–12 months.",
+      },
+      {
+        q: "Is credit repair legal?",
+        a: "Absolutely. The Fair Credit Reporting Act (FCRA) gives every American the legal right to dispute inaccurate, incomplete, or unverifiable information on their credit reports.",
+      },
+      {
+        q: "What's included in the service?",
+        a: "We pull and review all three bureau reports, identify disputable items, draft and file dispute letters, track bureau responses, and follow up until each item is resolved.",
+      },
+      {
+        q: "What does it cost?",
+        a: "We'll walk you through our fee structure during your free consultation. Under federal law we cannot charge you before services are performed.",
+      },
+      {
+        q: "Can you remove accurate negative information?",
+        a: "No — and any company that promises to is not being honest with you. We dispute items that are inaccurate, incomplete, outdated, or unverifiable. What we can do is make sure your report reflects only the truth.",
+      },
+    ],
+  },
+
+  consultationForm: {
+    heading: "Request Your Free Consultation",
+    fields: {
+      name: { label: "Full Name", placeholder: "Maria Gonzalez" },
+      email: { label: "Email Address", placeholder: "maria@example.com" },
+      phone: { label: "Phone", placeholder: "Ex: +1 (555) 123-4567" },
+      cityState: { label: "City and State", placeholder: "Miami, FL" },
+      creditScore: {
+        label: "Current Credit Score (Approximate)",
+        placeholder: "Select a range",
+        options: [
+          "Select a range",
+          "300–499 (Very Poor)",
+          "500–579 (Poor)",
+          "580–669 (Fair)",
+          "670–739 (Good)",
+          "740–799 (Very Good)",
+          "800–850 (Excellent)",
+          "I don't know",
+        ],
+      },
+      income: {
+        label: "Approximate Monthly Income",
+        placeholder: "Select a range",
+        options: [
+          "Select a range",
+          "Under $2,000",
+          "$2,000 – $4,000",
+          "$4,000 – $6,000",
+          "$6,000 – $8,000",
+          "Over $8,000",
+        ],
+      },
+      goals: {
+        label: "What Are Your Main Goals?",
+        placeholder:
+          "Ex: Buy a home, get a better credit card, refinance an auto loan...",
+      },
+      comments: {
+        label: "Additional Comments",
+        placeholder: "Tell us more about your current situation...",
+      },
+    },
+    consent1:
+      "I accept the Privacy Policy and the Terms of Service, and authorize use of my data for evaluation and follow-up.",
+    consent2:
+      "I agree to receive SMS messages from BCBL about my credit repair case and account updates. Approx. 4 msgs/month. Message & data rates may apply. Reply STOP to cancel, HELP for help. Consent is NOT a condition of service. See SMS Terms and Privacy.",
+    honeypotLabel: "If you are human, leave this field empty",
+    submit: "Request Free Consultation →",
+    loading: "Sending…",
+    successTitle: "We received your request!",
+    successBody:
+      "A specialist will contact you within one business day. If you'd like to speak with someone right now, call or text us.",
+    errors: {
+      name: "Please enter your full name.",
+      email: "Please enter a valid email.",
+      phone: "Please enter a valid phone number.",
+      goals: "Please describe your goals.",
+      consent1: "You must accept the terms to continue.",
+    },
+    paymentNote: "Secure payments. Cards accepted:",
+    paymentFine:
+      "We accept Visa and Mastercard. We do not accept American Express, Discover, or Maestro.",
+    orCall: "Or call us:",
+  },
+
+  footer: {
+    columns: {
+      contact: {
+        heading: "Contact",
+        hours: "Mon–Fri, 9:00 AM–6:00 PM EST",
+      },
+      legal: {
+        heading: "Legal",
+        links: [
+          { label: "Client Portal", href: "#" },
+          { label: "Terms of Service", href: "#" },
+          { label: "Refund Policy", href: "#" },
+          { label: "Privacy Policy", href: "#" },
+          { label: "SMS Terms", href: "#" },
+        ],
+      },
+      payments: {
+        heading: "Accepted Payments",
+        note: "Visa and Mastercard. We do not accept American Express, Discover, or Maestro.",
+      },
+    },
+    bottomLinks: [
+      { label: "Client Portal", href: "#" },
+      { label: "Terms of Service", href: "#" },
+      { label: "Refund Policy", href: "#" },
+      { label: "Privacy Policy", href: "#" },
+      { label: "SMS Terms", href: "#" },
+      { label: "Back to top", href: "#" },
+    ],
+    copyright: "© 2026 BCBL. All rights reserved.",
+    disclaimer:
+      "Score improvement depends on individual factors. We do not remove accurate, current, and verifiable information.",
+    sms: "SMS Program: BCBL Credit Repair Alerts. STOP=cancel | HELP=help. Message rates may apply. ~4/mo.",
+  },
+
+  stickyBar: {
+    call: "Call Now",
+    text: "Text Us",
+  },
+};
+
+export const dictionaries: Record<Lang, typeof es> = { es, en };
