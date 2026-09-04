@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
+import ExperianLogo from "@/components/ui/ExperianLogo";
+import EquifaxLogo from "@/components/ui/EquifaxLogo";
+import TransUnionLogo from "@/components/ui/TransUnionLogo";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { site } from "@/config/site";
 
@@ -69,6 +72,24 @@ export default function Hero() {
                 <WhatsAppIcon size={15} />
                 {t.hero.whatsappLink}
               </a>
+            </div>
+
+            {/* Bureau trust strip */}
+            <div className="mt-6 pt-5 border-t border-line">
+              <p className="text-xs text-muted mb-3">{t.hero.bureauLabel}</p>
+              <div className="flex flex-wrap items-center gap-3">
+                {/* Fixed-height pill container per logo — consistent padding and alignment */}
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                  <ExperianLogo height={22} />
+                </div>
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                  {/* Equifax viewBox has 75% fill — higher height compensates */}
+                  <EquifaxLogo height={27} />
+                </div>
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                  <TransUnionLogo height={21} />
+                </div>
+              </div>
             </div>
 
           </div>
