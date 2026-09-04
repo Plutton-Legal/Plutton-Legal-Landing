@@ -6,6 +6,8 @@ const es = {
     navHowItWorks: "Cómo Funciona",
     navReviews: "Reseñas",
     navFaq: "Preguntas",
+    navCheckScore: "Ver Puntaje",
+    navConsultation: "Consulta Gratis",
   },
 
   hero: {
@@ -17,6 +19,7 @@ const es = {
     whatsappLink: "¿Prefieres escribir? WhatsApp",
     imageAlt:
       "Especialista de BCBL asesorando a un cliente sobre su reporte de crédito",
+    bureauLabel: "Revisamos los tres burós:",
   },
 
   pullQuote: {
@@ -204,6 +207,42 @@ const es = {
     sms: "Programa SMS: BCBL Credit Repair Alerts. STOP=cancelar | HELP=ayuda. Pueden aplicar tarifas. ~4/mes.",
   },
 
+  creditCheck: {
+    heading: "Verifica Tu Puntaje de Crédito",
+    subtext:
+      "Saber tu puntaje antes de la consulta nos permite enfocarnos en lo que más importa. Consultar tu propio crédito nunca afecta tu puntaje.",
+    note: "Servicios de terceros. BCBL no tiene afiliación ni relación comercial con ninguno de ellos.",
+    resources: [
+      {
+        name: "Credit Karma",
+        badgeLabel: "Gratis",
+        paid: false,
+        description:
+          "VantageScore de Equifax y TransUnion sin costo. Sin tarjeta de crédito requerida.",
+        url: "https://www.creditkarma.com/",
+        cta: "Ver mi puntaje →",
+      },
+      {
+        name: "Experian",
+        badgeLabel: "Gratis",
+        paid: false,
+        description:
+          "Reporte Experian y FICO® Score 8 gratis. Directamente del buró oficial.",
+        url: "https://www.experian.com/",
+        cta: "Ver mi puntaje →",
+      },
+      {
+        name: "myFICO",
+        badgeLabel: "De pago",
+        paid: true,
+        description:
+          "Los puntajes FICO de los tres burós, los mismos que revisan los prestamistas al tomar decisiones.",
+        url: "https://www.myfico.com/",
+        cta: "Conocer más →",
+      },
+    ],
+  },
+
   stickyBar: {
     call: "Llamar",
     text: "Escribir",
@@ -216,6 +255,8 @@ const en: typeof es = {
     navHowItWorks: "How It Works",
     navReviews: "Reviews",
     navFaq: "FAQ",
+    navCheckScore: "Check Score",
+    navConsultation: "Free Consultation",
   },
 
   hero: {
@@ -226,6 +267,7 @@ const en: typeof es = {
     subCta: "Free consultation · No obligation · 15 minutes",
     whatsappLink: "Prefer to text? WhatsApp us",
     imageAlt: "BCBL specialist consulting with a client about their credit report",
+    bureauLabel: "We analyze all three bureaus:",
   },
 
   pullQuote: {
@@ -411,6 +453,42 @@ const en: typeof es = {
     disclaimer:
       "Score improvement depends on individual factors. We do not remove accurate, current, and verifiable information.",
     sms: "SMS Program: BCBL Credit Repair Alerts. STOP=cancel | HELP=help. Message rates may apply. ~4/mo.",
+  },
+
+  creditCheck: {
+    heading: "Check Your Credit Score First",
+    subtext:
+      "Knowing your score before your consultation helps us focus on what matters most. Checking your own credit never affects your score.",
+    note: "These are independent third-party services. BCBL is not affiliated with or compensated by any of them.",
+    resources: [
+      {
+        name: "Credit Karma",
+        badgeLabel: "Free",
+        paid: false,
+        description:
+          "Free VantageScore from Equifax and TransUnion. No credit card required.",
+        url: "https://www.creditkarma.com/",
+        cta: "Check my score →",
+      },
+      {
+        name: "Experian",
+        badgeLabel: "Free",
+        paid: false,
+        description:
+          "Free access to your Experian report and FICO® Score 8. Straight from the bureau.",
+        url: "https://www.experian.com/",
+        cta: "Check my score →",
+      },
+      {
+        name: "myFICO",
+        badgeLabel: "Paid",
+        paid: true,
+        description:
+          "FICO scores from all three bureaus — the same scores lenders actually use to make decisions.",
+        url: "https://www.myfico.com/",
+        cta: "Learn more →",
+      },
+    ],
   },
 
   stickyBar: {
