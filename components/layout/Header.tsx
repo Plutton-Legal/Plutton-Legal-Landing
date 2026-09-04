@@ -23,23 +23,20 @@ export default function Header() {
           className="hidden md:flex items-center gap-6 ml-auto"
           aria-label="Navegación principal"
         >
-          <a
-            href="#how-it-works"
-            className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-          >
+          <a href="#how-it-works" className="text-sm font-semibold text-navy hover:text-gold transition-colors">
             {t.header.navHowItWorks}
           </a>
-          <a
-            href="#reviews"
-            className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-          >
+          <a href="#reviews" className="text-sm font-semibold text-navy hover:text-gold transition-colors">
             {t.header.navReviews}
           </a>
-          <a
-            href="#faq"
-            className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-          >
+          <a href="#faq" className="text-sm font-semibold text-navy hover:text-gold transition-colors">
             {t.header.navFaq}
+          </a>
+          <a href="#check-your-score" className="text-sm font-semibold text-navy hover:text-gold transition-colors">
+            {t.header.navCheckScore}
+          </a>
+          <a href="#consultation" className="text-sm font-semibold text-navy hover:text-gold transition-colors">
+            {t.header.navConsultation}
           </a>
         </nav>
 
@@ -56,26 +53,25 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile nav strip — always visible on mobile, hidden on md+ */}
-      <div className="md:hidden bg-tint border-b border-line flex items-center justify-center gap-6 py-2.5">
-        <a
-          href="#how-it-works"
-          className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-        >
-          {t.header.navHowItWorks}
-        </a>
-        <a
-          href="#reviews"
-          className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-        >
-          {t.header.navReviews}
-        </a>
-        <a
-          href="#faq"
-          className="text-sm font-semibold text-navy hover:text-gold transition-colors"
-        >
-          {t.header.navFaq}
-        </a>
+      {/* Mobile nav strip — scrollable horizontally to fit all links */}
+      <div className="md:hidden bg-tint border-b border-line overflow-x-auto scrollbar-none">
+        <div className="flex items-center gap-5 py-2.5 px-5 w-max">
+          <a href="#how-it-works" className="text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap">
+            {t.header.navHowItWorks}
+          </a>
+          <a href="#reviews" className="text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap">
+            {t.header.navReviews}
+          </a>
+          <a href="#faq" className="text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap">
+            {t.header.navFaq}
+          </a>
+          <a href="#check-your-score" className="text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap">
+            {t.header.navCheckScore}
+          </a>
+          <a href="#consultation" className="text-sm font-semibold text-navy hover:text-gold transition-colors whitespace-nowrap">
+            {t.header.navConsultation}
+          </a>
+        </div>
       </div>
     </header>
   );
