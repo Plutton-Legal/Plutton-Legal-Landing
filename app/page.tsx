@@ -4,6 +4,7 @@ import Explainer from "@/components/sections/Explainer";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
+import CreditCheckResources from "@/components/sections/CreditCheckResources";
 import ConsultationForm from "@/components/sections/ConsultationForm";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <FAQ />
+      <CreditCheckResources />
       <ConsultationForm />
     </main>
   );
