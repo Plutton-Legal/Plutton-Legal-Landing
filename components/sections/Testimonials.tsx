@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import Reveal from "@/components/ui/Reveal";
 
 function Avatar({ index, initial, name }: { index: number; initial: string; name: string }) {
   const [err, setErr] = useState(false);
@@ -52,12 +53,14 @@ export default function Testimonials() {
   return (
     <section id="reviews" className="bg-tint py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-5">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-12 text-center tracking-tight">
-          {t.testimonials.heading}
-        </h2>
+        <Reveal>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-12 text-center tracking-tight">
+            {t.testimonials.heading}
+          </h2>
+        </Reveal>
 
         {/* Mobile: swipeable single-card carousel */}
-        <div className="md:hidden">
+        <Reveal className="md:hidden">
           <div
             className="bg-white rounded-2xl p-6 border border-line select-none"
             onTouchStart={handleTouchStart}
@@ -84,23 +87,25 @@ export default function Testimonials() {
               />
             ))}
           </div>
-        </div>
+        </Reveal>
 
         {/* Desktop: 3-column grid */}
         <div className="hidden md:grid grid-cols-3 gap-6">
           {items.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 border border-line flex flex-col">
-              <p className="text-sm text-ink leading-relaxed flex-1">
-                &ldquo;{item.quote}&rdquo;
-              </p>
-              <div className="flex items-center gap-3 mt-5 pt-4 border-t border-line">
-                <Avatar index={i} initial={item.initial} name={item.name} />
-                <div>
-                  <p className="text-sm font-bold text-navy">{item.name}</p>
-                  <p className="text-xs text-muted">{item.location}</p>
+            <Reveal key={i} delayMs={i * 100}>
+              <div className="bg-white rounded-2xl p-6 border border-line flex flex-col h-full">
+                <p className="text-sm text-ink leading-relaxed flex-1">
+                  &ldquo;{item.quote}&rdquo;
+                </p>
+                <div className="flex items-center gap-3 mt-5 pt-4 border-t border-line">
+                  <Avatar index={i} initial={item.initial} name={item.name} />
+                  <div>
+                    <p className="text-sm font-bold text-navy">{item.name}</p>
+                    <p className="text-xs text-muted">{item.location}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

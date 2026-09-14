@@ -8,6 +8,7 @@ import EquifaxLogo from "@/components/ui/EquifaxLogo";
 import TransUnionLogo from "@/components/ui/TransUnionLogo";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { site } from "@/config/site";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Hero() {
   const t = useTranslation();
@@ -15,7 +16,7 @@ export default function Hero() {
 
   return (
     <section className="bg-white pt-10 pb-16 md:pt-16 md:pb-24">
-      <div className="max-w-6xl mx-auto px-5">
+      <Reveal className="max-w-6xl mx-auto px-5">
         <div className="flex flex-col md:grid md:grid-cols-2 md:gap-14 md:items-center">
 
           {/* Image — top on mobile, right column on desktop */}
@@ -100,7 +101,7 @@ export default function Hero() {
 
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

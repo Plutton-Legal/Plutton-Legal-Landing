@@ -8,6 +8,7 @@ import VisaLogo from "@/components/ui/VisaLogo";
 import MastercardLogo from "@/components/ui/MastercardLogo";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { site } from "@/config/site";
+import Reveal from "@/components/ui/Reveal";
 
 type FormState = {
   name: string;
@@ -110,10 +111,13 @@ export default function ConsultationForm() {
   return (
     <section id="consultation" className="bg-navy-deep py-16 md:py-24">
       <div className="max-w-2xl mx-auto px-5">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-white text-center mb-10 tracking-tight leading-tight">
-          {f.heading}
-        </h2>
+        <Reveal>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-white text-center mb-10 tracking-tight leading-tight">
+            {f.heading}
+          </h2>
+        </Reveal>
 
+        <Reveal delayMs={100}>
         {submitted ? (
           <div className="bg-white/10 rounded-2xl p-8 text-center border border-white/10">
             <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center mx-auto mb-4">
@@ -329,6 +333,7 @@ export default function ConsultationForm() {
             </div>
           </form>
         )}
+        </Reveal>
       </div>
     </section>
   );

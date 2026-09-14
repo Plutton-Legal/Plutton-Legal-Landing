@@ -95,50 +95,50 @@ export default function Listbox({
         <ChevronDown
           size={16}
           strokeWidth={2}
-          className={`shrink-0 text-muted transition-transform ${open ? "rotate-180" : ""}`}
+          className={`shrink-0 text-muted transition-transform duration-200 ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
         />
       </button>
 
-      {open && (
-        <ul
-          id={`${id}-list`}
-          ref={listRef}
-          role="listbox"
-          aria-label={ariaLabel}
-          className="absolute z-30 left-0 right-0 mt-1.5 bg-white border border-line rounded-xl shadow-lg overflow-y-auto max-h-56 py-1"
-        >
-          {options.map((opt, i) => {
-            const isSelected = value !== "" && opt === value;
-            return (
-              <li
-                key={opt}
-                role="option"
-                aria-selected={isSelected}
-                onMouseDown={() => select(opt)}
-                onMouseEnter={() => setFocusedIdx(i)}
-                className={`flex items-center justify-between px-4 py-2.5 text-sm cursor-pointer select-none ${
-                  i === focusedIdx ? "bg-tint" : ""
-                } ${i === 0 ? "text-muted" : "text-navy"}`}
-              >
-                {opt}
-                {isSelected && (
-                  <svg
-                    className="w-4 h-4 text-navy shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      )}
+      <ul
+        id={`${id}-list`}
+        ref={listRef}
+        role="listbox"
+        aria-label={ariaLabel}
+        className={`absolute z-30 left-0 right-0 mt-1.5 bg-white border border-line rounded-xl shadow-lg overflow-y-auto max-h-56 py-1 origin-top transition-all duration-150 ease-out ${
+          open ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible pointer-events-none"
+        }`}
+      >
+        {options.map((opt, i) => {
+          const isSelected = value !== "" && opt === value;
+          return (
+            <li
+              key={opt}
+              role="option"
+              aria-selected={isSelected}
+              onMouseDown={() => select(opt)}
+              onMouseEnter={() => setFocusedIdx(i)}
+              className={`flex items-center justify-between px-4 py-2.5 text-sm cursor-pointer select-none ${
+                i === focusedIdx ? "bg-tint" : ""
+              } ${i === 0 ? "text-muted" : "text-navy"}`}
+            >
+              {opt}
+              {isSelected && (
+                <svg
+                  className="w-4 h-4 text-navy shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

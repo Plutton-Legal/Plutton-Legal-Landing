@@ -5,6 +5,7 @@ import ExperianLogo from "@/components/ui/ExperianLogo";
 import EquifaxLogo from "@/components/ui/EquifaxLogo";
 import TransUnionLogo from "@/components/ui/TransUnionLogo";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import Reveal from "@/components/ui/Reveal";
 
 const resourceLogos: Record<string, React.ReactNode> = {
   "Experian": <ExperianLogo height={30} />,
@@ -20,48 +21,49 @@ export default function CreditCheckResources() {
     <section id="check-your-score" className="bg-navy py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-5">
 
-        <div className="text-center mb-10 md:mb-12">
+        <Reveal className="text-center mb-10 md:mb-12">
           <h2 className="text-2xl md:text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
             {s.heading}
           </h2>
           <p className="text-base text-white/70 max-w-xl mx-auto leading-relaxed">
             {s.subtext}
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-          {s.resources.map((resource) => (
-            <a
-              key={resource.name}
-              href={resource.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-white rounded-2xl p-6 flex flex-col hover:shadow-2xl transition-shadow"
-              aria-label={`${resource.name} — ${resource.description}`}
-            >
-              <div className="mb-4">
-                {resourceLogos[resource.name]}
-              </div>
-
-              <span
-                className={`inline-flex self-start text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3 ${
-                  resource.paid
-                    ? "bg-line text-muted"
-                    : "bg-tint border border-line text-navy"
-                }`}
+          {s.resources.map((resource, i) => (
+            <Reveal key={resource.name} delayMs={i * 100}>
+              <a
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white rounded-2xl p-6 flex flex-col h-full hover:shadow-2xl transition-shadow"
+                aria-label={`${resource.name} — ${resource.description}`}
               >
-                {resource.badgeLabel}
-              </span>
+                <div className="mb-4">
+                  {resourceLogos[resource.name]}
+                </div>
 
-              <p className="text-sm text-muted leading-relaxed flex-1 mb-5">
-                {resource.description}
-              </p>
+                <span
+                  className={`inline-flex self-start text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3 ${
+                    resource.paid
+                      ? "bg-line text-muted"
+                      : "bg-tint border border-line text-navy"
+                  }`}
+                >
+                  {resource.badgeLabel}
+                </span>
 
-              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-navy group-hover:gap-3 transition-all">
-                {resource.cta}
-                <ExternalLink size={13} strokeWidth={2} aria-hidden="true" />
-              </span>
-            </a>
+                <p className="text-sm text-muted leading-relaxed flex-1 mb-5">
+                  {resource.description}
+                </p>
+
+                <span className="inline-flex items-center gap-1.5 text-sm font-bold text-navy group-hover:gap-3 transition-all">
+                  {resource.cta}
+                  <ExternalLink size={13} strokeWidth={2} aria-hidden="true" />
+                </span>
+              </a>
+            </Reveal>
           ))}
         </div>
 

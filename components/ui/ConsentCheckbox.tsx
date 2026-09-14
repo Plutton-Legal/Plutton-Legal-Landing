@@ -13,15 +13,18 @@ export default function ConsentCheckbox({ checked, onChange, children }: Consent
     <label className="flex gap-3 items-start cursor-pointer group">
       <span className="shrink-0 flex items-center justify-center w-11 h-11 -m-1.5">
         <span
-          className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-colors ${
+          className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-colors duration-200 ${
             checked
               ? "bg-gold border-gold"
               : "bg-white/10 border-white/30 group-hover:border-white/60"
           }`}
         >
-          {checked && (
-            <Check size={14} strokeWidth={3} className="text-navy" aria-hidden="true" />
-          )}
+          <Check
+            size={14}
+            strokeWidth={3}
+            className={`text-navy transition-all duration-200 ${checked ? "opacity-100 scale-100" : "opacity-0 scale-50"}`}
+            aria-hidden="true"
+          />
         </span>
       </span>
       <input
