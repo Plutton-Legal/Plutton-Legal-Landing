@@ -342,117 +342,22 @@ before introducing global state.
 
 ---
 
-# 13. Tailwind CSS
+# 13. Design System
 
-Tailwind CSS is the primary styling system.
+Visual styling decisions — Tailwind usage, color tokens, and typography — are governed by the `design-system` skill at `.claude/skills/design-system/SKILL.md`. That skill is the single source of truth for the approved palette (navy, navy-deep, tint, gold, ink, muted, line, white), token usage rules, Tailwind conventions, and typography hierarchy.
 
-Use Tailwind consistently.
+Invoke the `design-system` skill automatically whenever a task involves:
 
-Avoid large custom CSS files when the same result can be expressed clearly with Tailwind.
+- creating a new component
+- modifying existing styles
+- adding a section to the landing page
+- any color, typography, or spacing decision
 
-Do not scatter raw hex values throughout components.
-
-Use semantic project tokens.
-
-Do not introduce random Tailwind colors.
-
-Do not use arbitrary values merely for convenience.
-
-Arbitrary values are acceptable when necessary for accurate reproduction of the approved design.
-
-Prioritize visual fidelity without turning the code into unreadable class strings.
+Do not duplicate the skill's content in this file. If this file and the skill ever appear to conflict, the skill wins for styling/token/typography questions — update the skill rather than restating rules here.
 
 ---
 
-# 14. Design Tokens
-
-The approved project palette is:
-
-navy: #003D64
-navy-deep: #002740
-tint: #F2F7FA
-gold: #E8A33D
-ink: #0F1B24
-muted: #5A6B78
-line: #DCE6ED
-white: #FFFFFF
-
-Usage:
-
-navy
-
-- primary brand color
-- headings
-- navigation
-- primary brand elements
-
-navy-deep
-
-- dark sections
-- dark backgrounds
-- form section background
-
-tint
-
-- alternate light section backgrounds
-
-gold
-
-- CTA buttons ONLY
-- primary action emphasis
-
-ink
-
-- primary body text
-
-muted
-
-- secondary text
-- captions
-- placeholders
-
-line
-
-- borders
-- dividers
-
-white
-
-- base backgrounds
-- text on dark backgrounds where appropriate
-
-IMPORTANT:
-
-Gold is reserved for CTAs.
-
-Do not use gold as a generic decorative color.
-
-Do not introduce additional brand colors without explicit approval.
-
----
-
-# 15. Typography
-
-Use a sans-serif font.
-
-The exact font family must follow the approved design.
-
-Do not arbitrarily replace the approved font with another font because it is popular or convenient.
-
-Typography must respect the current hierarchy:
-
-- font family
-- font weight
-- font size
-- line height
-- letter spacing
-- responsive scaling
-
-Do not invent typography values when the current implementation already defines them.
-
----
-
-# 16. Assets
+# 14. Assets
 
 Assets supplied by the project owner are authoritative.
 
@@ -482,7 +387,7 @@ For icons:
 
 ---
 
-# 17. Images
+# 15. Images
 
 Use Next.js image optimization where appropriate.
 
@@ -506,7 +411,7 @@ Never keyword-stuff alt text.
 
 ---
 
-# 18. Forms
+# 16. Forms
 
 The lead form is part of the UI phase but will eventually connect to a backend.
 
@@ -528,7 +433,7 @@ The frontend should be designed so that the eventual API integration does not re
 
 ---
 
-# 19. Backend Plan
+# 17. Backend Plan
 
 Backend development is intentionally deferred.
 
@@ -551,7 +456,7 @@ Do not create database schemas, database connections, API routes, authentication
 
 ---
 
-# 20. Security
+# 18. Security
 
 Treat ALL client-provided input as untrusted.
 
@@ -591,7 +496,7 @@ When the backend is implemented, use parameterized queries or a safe ORM/databas
 
 ---
 
-# 21. Lead Data
+# 19. Lead Data
 
 The company operates in the credit repair industry.
 
@@ -613,7 +518,7 @@ Do not create database fields for information that the application does not actu
 
 ---
 
-# 22. Business Claims
+# 20. Business Claims
 
 This is a US-facing credit repair website.
 
@@ -641,7 +546,7 @@ SEO optimization must never introduce unsupported business claims.
 
 ---
 
-# 23. SEO
+# 21. SEO
 
 Use semantic HTML.
 
@@ -680,7 +585,7 @@ Do not add fake reviews or aggregate ratings for SEO.
 
 ---
 
-# 24. Accessibility
+# 22. Accessibility
 
 Build accessible HTML from the beginning.
 
@@ -704,7 +609,7 @@ Do not use a link for an action that should be a button.
 
 ---
 
-# 25. SEO + Accessibility + Design
+# 23. SEO + Accessibility + Design
 
 Do not sacrifice semantics for visual appearance.
 
@@ -716,7 +621,7 @@ CSS should control appearance without destroying HTML semantics.
 
 ---
 
-# 26. Performance
+# 24. Performance
 
 Prefer Server Components.
 
@@ -738,7 +643,7 @@ Do not make the entire application client-side unnecessarily.
 
 ---
 
-# 27. Dependencies
+# 25. Dependencies
 
 Do not install npm packages without explicit approval.
 
@@ -757,7 +662,7 @@ Do not install libraries simply because they are popular.
 
 ---
 
-# 28. Code Quality
+# 26. Code Quality
 
 Prefer readable code over clever code.
 
@@ -791,7 +696,7 @@ Do not leave debugging statements.
 
 ---
 
-# 29. No Unrequested Refactoring
+# 27. No Unrequested Refactoring
 
 Do not refactor unrelated code.
 
@@ -805,7 +710,7 @@ When a refactor is necessary, keep it scoped to the current task and explain why
 
 ---
 
-# 30. Verification
+# 28. Verification
 
 After every meaningful implementation:
 
@@ -832,7 +737,7 @@ A section is complete only when:
 
 ---
 
-# 31. Decision Making
+# 29. Decision Making
 
 When requirements are explicit, implement them directly.
 
@@ -850,7 +755,7 @@ For decisions that materially affect architecture, UX, security, business logic,
 
 ---
 
-# 32. Implementation Priority
+# 30. Implementation Priority
 
 When implementing a section, prioritize:
 
@@ -868,7 +773,7 @@ Do not sacrifice a higher-priority requirement for a lower-priority optimization
 
 ---
 
-# 33. Current Project Phase
+# 31. Current Project Phase
 
 CURRENT PHASE: UI ONLY.
 
@@ -902,7 +807,7 @@ The backend will be implemented in a later phase.
 
 ---
 
-# 34. Working Principle
+# 32. Working Principle
 
 Do not try to predict the entire application.
 
@@ -924,7 +829,7 @@ Do not confuse these three responsibilities.
 
 ---
 
-# 35. Current Page Structure
+# 33. Current Page Structure
 
 The full page renders these sections in order:
 
@@ -948,7 +853,7 @@ The mobile nav strip uses `overflow-x-auto scrollbar-none` with an inner `w-max`
 
 ---
 
-# 36. SVG Logo Components
+# 34. SVG Logo Components
 
 All third-party brand logos are inline SVG components in `components/ui/`. The established pattern:
 
@@ -974,7 +879,7 @@ When rendering multiple logos at the same optical size (e.g., the Hero bureau st
 
 ---
 
-# 37. i18n System
+# 35. i18n System
 
 Translations live in `lib/i18n/dictionaries.ts`. Two locales: `es` (primary/default) and `en`. The `en` object type is inferred as `typeof es`, so TypeScript will error if a key exists in `es` but is missing from `en`.
 
@@ -989,3 +894,11 @@ When adding new translatable strings:
 Do not hardcode any user-visible string directly in a component. All copy goes through the i18n system.
 
 Brand names used as dictionary keys (e.g., `"Credit Karma"`, `"Experian"`, `"myFICO"`) must match exactly between the dictionary and any keyed lookup in components (e.g., `resourceLogos[resource.name]` in `CreditCheckResources`).
+
+---
+
+# 36. Modifying This File
+
+This file (`CLAUDE.md`) defines the operating rules for this project. Do not edit it unprompted.
+
+If asked to update CLAUDE.md — or if you determine mid-task that a rule here is outdated, missing, or conflicts with a skill — propose the exact change and ask for explicit approval before writing to the file. Do not bundle CLAUDE.md edits into unrelated feature work without calling them out separately.
