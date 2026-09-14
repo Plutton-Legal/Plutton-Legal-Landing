@@ -54,7 +54,7 @@ export default function Footer() {
                   className="flex items-center gap-2 text-sm text-muted hover:text-white transition-colors"
                 >
                   <WhatsAppIcon size={13} />
-                  {site.phoneDisplay}
+                  {site.whatsappDisplay}
                 </a>
               </li>
               <li className="text-sm text-muted">{cols.contact.hours}</li>
