@@ -58,6 +58,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-sm text-muted">{cols.contact.hours}</li>
+              <li className="text-sm text-muted">{site.address}</li>
               <li className="text-sm text-muted">{site.web}</li>
             </ul>
           </div>

@@ -172,7 +172,7 @@ const es = {
     columns: {
       contact: {
         heading: "Contacto",
-        hours: "Lun–Vie, 9:00 AM–6:00 PM EST",
+        hours: "Lun–Vie, 10:00 AM–7:00 PM EST",
       },
       legal: {
         heading: "Legal",
@@ -416,7 +416,7 @@ const en: typeof es = {
     columns: {
       contact: {
         heading: "Contact",
-        hours: "Mon–Fri, 9:00 AM–6:00 PM EST",
+        hours: "Mon–Fri, 10:00 AM–7:00 PM EST",
       },
       legal: {
         heading: "Legal",

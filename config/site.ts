@@ -7,4 +7,5 @@ export const site = {
   email: "support@bettercreditbetterlife.com",
   web: "bettercreditbetterlife.com",
   company: "BCBL LLC",
+  address: "14 NE 1st Ave #1403, Miami, FL 33132",
 } as const;
