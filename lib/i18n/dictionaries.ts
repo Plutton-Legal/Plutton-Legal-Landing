@@ -39,11 +39,11 @@ const es = {
     steps: [
       {
         title: "Revisamos tu reporte",
-        body: "Leemos los tres burós para encontrar errores, duplicados y elementos desactualizados que no deberían estar ahí.",
+        body: "Analizamos los tres burós para identificar errores, cuentas duplicadas, cuentas que no te pertenecen e información desactualizada o no verificable que esté afectando tu historial crediticio.",
       },
       {
-        title: "Disputamos lo incorrecto",
-        body: "Disputas formales bajo la ley federal, con seguimiento de cada respuesta hasta que se resuelva.",
+        title: "Realizamos disputas formales",
+        body: "Presentamos disputas formales bajo la ley federal por cada elemento inexacto, incompleto o no verificable, y damos seguimiento a cada respuesta hasta que el buró lo corrija o lo elimine.",
       },
       {
         title: "Te ayudamos a crecer",
@@ -287,11 +287,11 @@ const en: typeof es = {
     steps: [
       {
         title: "We review your report",
-        body: "A full read of all three bureaus to find errors, duplicates, and outdated items that shouldn't be there.",
+        body: "We analyze all three bureaus to identify errors, duplicate accounts, accounts that aren't yours, and outdated or unverifiable information affecting your credit history.",
       },
       {
-        title: "We challenge what's wrong",
-        body: "Formal disputes filed under federal law, with every response tracked and followed up until resolved.",
+        title: "We file formal disputes",
+        body: "We file formal disputes under federal law for every inaccurate, incomplete, or unverifiable item, and follow up on every response until the bureau corrects or removes it.",
       },
       {
         title: "We help you build",

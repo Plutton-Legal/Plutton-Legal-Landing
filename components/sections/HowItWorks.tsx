@@ -16,16 +16,16 @@ export default function HowItWorks() {
         <h2 className="text-2xl md:text-4xl font-extrabold text-navy mb-12 text-center tracking-tight">
           {t.howItWorks.heading}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {steps.map((step, i) => {
             const Icon = stepIcons[i];
             return (
               <div
                 key={i}
-                className={`py-8 md:py-0${i < steps.length - 1 ? " border-b md:border-b-0 border-line" : ""}`}
+                className="bg-tint rounded-2xl border border-line p-6 md:p-7"
               >
-                <div className="w-10 h-10 rounded-lg bg-tint flex items-center justify-center mb-4">
-                  <Icon size={20} strokeWidth={1.75} className="text-navy" aria-hidden="true" />
+                <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-4">
+                  <Icon size={22} strokeWidth={1.75} className="text-white" aria-hidden="true" />
                 </div>
                 <p className="text-xs font-bold text-gold tracking-widest uppercase mb-2">
                   0{i + 1}
