@@ -24,7 +24,7 @@ export default function HowItWorks() {
             const Icon = stepIcons[i];
             return (
               <Reveal key={i} delayMs={i * 100}>
-                <div className="bg-tint rounded-2xl border border-line p-6 md:p-7">
+                <div className="bg-tint rounded-2xl border border-line p-6 md:p-7 h-full">
                   <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-4">
                     <Icon size={22} strokeWidth={1.75} className="text-white" aria-hidden="true" />
                   </div>
