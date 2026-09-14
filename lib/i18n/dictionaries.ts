@@ -30,8 +30,8 @@ const es = {
 
   explainer: {
     heading: "¿Qué contiene tu reporte de crédito?",
-    p1: "Tu reporte de crédito es un registro de cómo has pedido prestado y pagado dinero: tarjetas, préstamos, hipotecas y más. Cada prestamista puede reportar a uno o más de los tres burós principales: Equifax, Experian y TransUnion.",
-    p2: "Los reportes contienen errores con mucha más frecuencia de lo que la gente cree: cuentas que no son tuyas, saldos incorrectos o pagos marcados tarde cuando no lo estaban. La ley federal te da el derecho de disputar cualquier información inexacta, incompleta o no verificable.",
+    p1: "Tu reporte de crédito documenta tu historial de endeudamiento y pago: tarjetas de crédito, préstamos personales, hipotecas y otras líneas de crédito. Cada institución financiera con la que has trabajado puede reportar esta información a uno o más de los tres burós principales: Equifax, Experian y TransUnion.",
+    p2: "Es más frecuente de lo que se piensa que estos reportes contengan errores: cuentas que no te pertenecen, saldos reportados de forma incorrecta o pagos marcados como tardíos sin haberlo sido. La ley federal te otorga el derecho de disputar cualquier información inexacta, incompleta o no verificable.",
   },
 
   howItWorks: {
@@ -277,9 +277,9 @@ const en: typeof es = {
   },
 
   explainer: {
-    heading: "What's actually on your credit report?",
-    p1: "Your credit report is a record of how you've borrowed and repaid money — credit cards, loans, mortgages, and more. Every lender you've worked with can report to one or more of the three major bureaus: Equifax, Experian, and TransUnion.",
-    p2: "Reports contain errors far more often than most people realize — accounts that aren't yours, balances reported incorrectly, or payments marked late when they weren't. Federal law gives you the right to challenge anything that is inaccurate, incomplete, or unverifiable.",
+    heading: "What information appears on your credit report?",
+    p1: "Your credit report documents your borrowing and repayment history — credit cards, personal loans, mortgages, and other lines of credit. Each financial institution you've worked with may report this information to one or more of the three major bureaus: Equifax, Experian, and TransUnion.",
+    p2: "It is more common than most people realize for these reports to contain errors — accounts that don't belong to you, balances reported incorrectly, or payments marked late when they weren't. Federal law grants you the right to dispute any information that is inaccurate, incomplete, or unverifiable.",
   },
 
   howItWorks: {
