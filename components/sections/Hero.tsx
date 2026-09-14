@@ -74,23 +74,29 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Bureau trust strip */}
-            <div className="mt-6 pt-5 border-t border-line">
-              <p className="text-xs text-muted mb-3">{t.hero.bureauLabel}</p>
+            {/* Bureau trust strip — links to the credit check section */}
+            <a
+              href="#check-your-score"
+              aria-label={t.creditCheck.heading}
+              className="group block mt-6 pt-5 border-t border-line"
+            >
+              <p className="text-xs text-muted mb-3 group-hover:text-navy transition-colors">
+                {t.hero.bureauLabel}
+              </p>
               <div className="flex flex-wrap items-center gap-3">
                 {/* Fixed-height pill container per logo — consistent padding and alignment */}
-                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11 group-hover:border-navy transition-colors">
                   <ExperianLogo height={22} />
                 </div>
-                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11 group-hover:border-navy transition-colors">
                   {/* Equifax viewBox has 75% fill — higher height compensates */}
                   <EquifaxLogo height={27} />
                 </div>
-                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11">
+                <div className="inline-flex items-center justify-center bg-tint border border-line rounded-lg px-4 h-11 group-hover:border-navy transition-colors">
                   <TransUnionLogo height={21} />
                 </div>
               </div>
-            </div>
+            </a>
 
           </div>
         </div>

@@ -1,15 +1,15 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
-import CreditKarmaLogo from "@/components/ui/CreditKarmaLogo";
 import ExperianLogo from "@/components/ui/ExperianLogo";
-import MyFicoLogo from "@/components/ui/MyFicoLogo";
+import EquifaxLogo from "@/components/ui/EquifaxLogo";
+import TransUnionLogo from "@/components/ui/TransUnionLogo";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
 const resourceLogos: Record<string, React.ReactNode> = {
-  "Credit Karma": <CreditKarmaLogo height={20} />,
   "Experian": <ExperianLogo height={30} />,
-  "myFICO": <MyFicoLogo height={28} />,
+  "Equifax": <EquifaxLogo height={36} />,
+  "TransUnion": <TransUnionLogo height={28} />,
 };
 
 export default function CreditCheckResources() {

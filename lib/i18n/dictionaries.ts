@@ -214,15 +214,6 @@ const es = {
     note: "Servicios de terceros. BCBL no tiene afiliación ni relación comercial con ninguno de ellos.",
     resources: [
       {
-        name: "Credit Karma",
-        badgeLabel: "Gratis",
-        paid: false,
-        description:
-          "VantageScore de Equifax y TransUnion sin costo. Sin tarjeta de crédito requerida.",
-        url: "https://www.creditkarma.com/",
-        cta: "Ver mi puntaje →",
-      },
-      {
         name: "Experian",
         badgeLabel: "Gratis",
         paid: false,
@@ -232,13 +223,22 @@ const es = {
         cta: "Ver mi puntaje →",
       },
       {
-        name: "myFICO",
-        badgeLabel: "De pago",
-        paid: true,
+        name: "Equifax",
+        badgeLabel: "Gratis",
+        paid: false,
         description:
-          "Los puntajes FICO de los tres burós, los mismos que revisan los prestamistas al tomar decisiones.",
-        url: "https://www.myfico.com/",
-        cta: "Conocer más →",
+          "Reporte y puntaje de crédito Equifax gratis. Directamente del buró oficial.",
+        url: "https://www.equifax.com/personal/",
+        cta: "Ver mi puntaje →",
+      },
+      {
+        name: "TransUnion",
+        badgeLabel: "Gratis",
+        paid: false,
+        description:
+          "Reporte y puntaje de crédito TransUnion gratis. Directamente del buró oficial.",
+        url: "https://www.transunion.com/consumer",
+        cta: "Ver mi puntaje →",
       },
     ],
   },
@@ -462,15 +462,6 @@ const en: typeof es = {
     note: "These are independent third-party services. BCBL is not affiliated with or compensated by any of them.",
     resources: [
       {
-        name: "Credit Karma",
-        badgeLabel: "Free",
-        paid: false,
-        description:
-          "Free VantageScore from Equifax and TransUnion. No credit card required.",
-        url: "https://www.creditkarma.com/",
-        cta: "Check my score →",
-      },
-      {
         name: "Experian",
         badgeLabel: "Free",
         paid: false,
@@ -480,13 +471,22 @@ const en: typeof es = {
         cta: "Check my score →",
       },
       {
-        name: "myFICO",
-        badgeLabel: "Paid",
-        paid: true,
+        name: "Equifax",
+        badgeLabel: "Free",
+        paid: false,
         description:
-          "FICO scores from all three bureaus — the same scores lenders actually use to make decisions.",
-        url: "https://www.myfico.com/",
-        cta: "Learn more →",
+          "Free access to your Equifax credit report and score. Straight from the bureau.",
+        url: "https://www.equifax.com/personal/",
+        cta: "Check my score →",
+      },
+      {
+        name: "TransUnion",
+        badgeLabel: "Free",
+        paid: false,
+        description:
+          "Free access to your TransUnion credit report and score. Straight from the bureau.",
+        url: "https://www.transunion.com/consumer",
+        cta: "Check my score →",
       },
     ],
   },
