@@ -58,21 +58,21 @@ const es = {
     items: [
       {
         quote:
-          "Me rechazaron en apartamentos por dos años. Tres meses después de trabajar con BCBL firmé el contrato del lugar que realmente quería.",
-        name: "Marcus T.",
+          "Durante años quise comprar mi primera casa en Estados Unidos, pero mi mal crédito no me lo permitía. Gracias a BCBL, hoy tengo mi primer hogar.",
+        name: "Carlos L.",
         location: "Atlanta, GA",
-        initial: "M",
+        initial: "C",
       },
       {
         quote:
-          "Por fin nos aprobaron la hipoteca. Después de años que nos decían que era imposible, cerramos nuestra primera casa el mes que viene.",
-        name: "Denise R.",
+          "Después de un divorcio difícil, mi crédito se vio muy afectado y tenía las puertas cerradas con los bancos. Gracias a BCBL pude recuperar mi historial, y ahora tengo acceso a las mejores tarjetas.",
+        name: "Denise M.",
         location: "Houston, TX",
         initial: "D",
       },
       {
         quote:
-          "Necesitaba un auto para ir al trabajo y no podía conseguir financiamiento. En pocos meses con BCBL salí del lote manejando.",
+          "Necesitaba un vehículo para ir al trabajo y no conseguía financiamiento en ningún lugar. Después de algunos meses trabajando con BCBL, pude salir manejando mi propio auto.",
         name: "James V.",
         location: "Phoenix, AZ",
         initial: "J",
@@ -306,21 +306,21 @@ const en: typeof es = {
     items: [
       {
         quote:
-          "I had been turned down for apartments for two years. Three months after working with BCBL I signed a lease on the place I actually wanted.",
-        name: "Marcus T.",
+          "For years I wanted to buy my first home in the United States, but my bad credit wouldn't let me. Thanks to BCBL, I now have my first home.",
+        name: "Carlos L.",
         location: "Atlanta, GA",
-        initial: "M",
+        initial: "C",
       },
       {
         quote:
-          "We finally got approved for our mortgage. After years of being told it wasn't possible, we're closing on our first home next month.",
-        name: "Denise R.",
+          "After a difficult divorce, my credit took a big hit and I felt shut out by the banks. Thanks to BCBL I was able to rebuild my credit history, and now I have access to the best credit cards.",
+        name: "Denise M.",
         location: "Houston, TX",
         initial: "D",
       },
       {
         quote:
-          "I needed a car to get to work and couldn't get financing anywhere. Within a few months of working with BCBL I drove off the lot.",
+          "I needed a vehicle to get to work and couldn't get financing anywhere. After a few months of working with BCBL, I drove off in a car of my own.",
         name: "James V.",
         location: "Phoenix, AZ",
         initial: "J",
