@@ -97,11 +97,7 @@ const es = {
       },
       {
         q: "¿Cuánto cuesta?",
-        a: "Te explicamos nuestra estructura de honorarios en la consulta gratuita. Por ley federal no podemos cobrar antes de realizar el servicio.",
-      },
-      {
-        q: "¿Pueden eliminar información negativa correcta?",
-        a: "No — y cualquier empresa que lo prometa no está siendo honesta. Disputamos información inexacta, incompleta, desactualizada o no verificable. Lo que sí hacemos es asegurarnos de que tu reporte refleje solo la verdad.",
+        a: "Te explicamos nuestra estructura de honorarios en la consulta gratuita.",
       },
     ],
   },
@@ -345,11 +341,7 @@ const en: typeof es = {
       },
       {
         q: "What does it cost?",
-        a: "We'll walk you through our fee structure during your free consultation. Under federal law we cannot charge you before services are performed.",
-      },
-      {
-        q: "Can you remove accurate negative information?",
-        a: "No — and any company that promises to is not being honest with you. We dispute items that are inaccurate, incomplete, outdated, or unverifiable. What we can do is make sure your report reflects only the truth.",
+        a: "We'll walk you through our fee structure during your free consultation.",
       },
     ],
   },
