@@ -13,9 +13,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BCBL — Mejor Crédito, Mejor Vida",
+  title: "Plutton Legal — Mejor Crédito, Mejor Vida",
   description:
-    "BCBL te ayuda a disputar errores en tu reporte de crédito bajo las protecciones de la ley federal.",
+    "Plutton Legal te ayuda a disputar errores en tu reporte de crédito bajo las protecciones de la ley federal.",
 };
 
 export default function RootLayout({
