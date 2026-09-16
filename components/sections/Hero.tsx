@@ -42,11 +42,16 @@ export default function Hero() {
               {t.hero.subCta}
             </span>
 
-            {/* H1 */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy mb-4 leading-[1.1] tracking-tight">
+            {/* H1 — brand name, prominent */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy mb-2 leading-[1.1] tracking-tight">
+              {site.company}
+            </h1>
+
+            {/* Tagline — smaller, secondary to the brand name */}
+            <p className="text-lg sm:text-xl font-semibold text-muted mb-4 leading-snug tracking-tight">
               <span className="block">{line1}</span>
               <span className="block">{line2}</span>
-            </h1>
+            </p>
 
             {/* Subtext */}
             <p className="text-base text-ink leading-relaxed mb-6 md:mb-8">
