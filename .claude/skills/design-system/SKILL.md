@@ -1,6 +1,6 @@
 ---
 name: design-system
-description: Sistema de diseño de Plutton Legal — paleta de colores (design tokens), Tailwind CSS y tipografía. Úsalo siempre que crees o modifiques cualquier componente visual, página, estilo, o elemento de interfaz.
+description: Sistema de diseño de Pluton Legal — paleta de colores (design tokens), Tailwind CSS y tipografía. Úsalo siempre que crees o modifiques cualquier componente visual, página, estilo, o elemento de interfaz.
 ---
 
 # Tailwind CSS

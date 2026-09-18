@@ -18,7 +18,7 @@ const es = {
     subCta: "Consulta gratis · Sin compromiso · 15 minutos",
     whatsappLink: "¿Prefieres escribir? WhatsApp",
     imageAlt:
-      "Especialista de Plutton Legal asesorando a un cliente sobre su reporte de crédito",
+      "Especialista de Pluton Legal asesorando a un cliente sobre su reporte de crédito",
     bureauLabel: "Revisamos los tres burós:",
   },
 
@@ -58,21 +58,21 @@ const es = {
     items: [
       {
         quote:
-          "Durante años quise comprar mi primera casa en Estados Unidos, pero mi mal crédito no me lo permitía. Gracias a Plutton Legal, hoy tengo mi primer hogar.",
+          "Durante años quise comprar mi primera casa en Estados Unidos, pero mi mal crédito no me lo permitía. Gracias a Pluton Legal, hoy tengo mi primer hogar.",
         name: "Carlos L.",
         location: "Atlanta, GA",
         initial: "C",
       },
       {
         quote:
-          "Después de un divorcio difícil, mi crédito se vio muy afectado y tenía las puertas cerradas con los bancos. Gracias a Plutton Legal pude recuperar mi historial, y ahora tengo acceso a las mejores tarjetas.",
+          "Después de un divorcio difícil, mi crédito se vio muy afectado y tenía las puertas cerradas con los bancos. Gracias a Pluton Legal pude recuperar mi historial, y ahora tengo acceso a las mejores tarjetas.",
         name: "Denise M.",
         location: "Houston, TX",
         initial: "D",
       },
       {
         quote:
-          "Necesitaba un vehículo para ir al trabajo y no conseguía financiamiento en ningún lugar. Después de algunos meses trabajando con Plutton Legal, pude salir manejando mi propio auto.",
+          "Necesitaba un vehículo para ir al trabajo y no conseguía financiamiento en ningún lugar. Después de algunos meses trabajando con Pluton Legal, pude salir manejando mi propio auto.",
         name: "James V.",
         location: "Phoenix, AZ",
         initial: "J",
@@ -148,7 +148,7 @@ const es = {
     consent1:
       "Acepto la Política de Privacidad y los Términos de Servicio, y autorizo el uso de mis datos para evaluación y seguimiento.",
     consent2:
-      "Acepto recibir mensajes SMS de Plutton Legal sobre mi caso de reparación de crédito. Aprox. 4 mensajes/mes. Pueden aplicar tarifas. Responde STOP para cancelar, HELP para ayuda. El consentimiento NO es condición del servicio. Ver Términos SMS y Privacidad.",
+      "Acepto recibir mensajes SMS de Pluton Legal sobre mi caso de reparación de crédito. Aprox. 4 mensajes/mes. Pueden aplicar tarifas. Responde STOP para cancelar, HELP para ayuda. El consentimiento NO es condición del servicio. Ver Términos SMS y Privacidad.",
     honeypotLabel: "Si eres humano, deja este campo vacío",
     submit: "Solicitar Consulta Gratis →",
     loading: "Enviando…",
@@ -197,17 +197,17 @@ const es = {
       { label: "Términos SMS", href: "#" },
       { label: "Volver arriba", href: "#" },
     ],
-    copyright: "© 2026 Plutton Legal. Todos los derechos reservados.",
+    copyright: "© 2026 Pluton Legal. Todos los derechos reservados.",
     disclaimer:
       "La mejora de puntaje depende de factores individuales. No eliminamos información precisa, vigente y verificable.",
-    sms: "Programa SMS: Plutton Legal Credit Repair Alerts. STOP=cancelar | HELP=ayuda. Pueden aplicar tarifas. ~4/mes.",
+    sms: "Programa SMS: Pluton Legal Credit Repair Alerts. STOP=cancelar | HELP=ayuda. Pueden aplicar tarifas. ~4/mes.",
   },
 
   creditCheck: {
     heading: "Verifica Tu Puntaje de Crédito",
     subtext:
       "Saber tu puntaje antes de la consulta nos permite enfocarnos en lo que más importa. Consultar tu propio crédito nunca afecta tu puntaje.",
-    note: "Servicios de terceros. Plutton Legal no tiene afiliación ni relación comercial con ninguno de ellos.",
+    note: "Servicios de terceros. Pluton Legal no tiene afiliación ni relación comercial con ninguno de ellos.",
     resources: [
       {
         name: "Experian",
@@ -262,7 +262,7 @@ const en: typeof es = {
     cta: "Talk to a Specialist — Free",
     subCta: "Free consultation · No obligation · 15 minutes",
     whatsappLink: "Prefer to text? WhatsApp us",
-    imageAlt: "Plutton Legal specialist consulting with a client about their credit report",
+    imageAlt: "Pluton Legal specialist consulting with a client about their credit report",
     bureauLabel: "We analyze all three bureaus:",
   },
 
@@ -302,21 +302,21 @@ const en: typeof es = {
     items: [
       {
         quote:
-          "For years I wanted to buy my first home in the United States, but my bad credit wouldn't let me. Thanks to Plutton Legal, I now have my first home.",
+          "For years I wanted to buy my first home in the United States, but my bad credit wouldn't let me. Thanks to Pluton Legal, I now have my first home.",
         name: "Carlos L.",
         location: "Atlanta, GA",
         initial: "C",
       },
       {
         quote:
-          "After a difficult divorce, my credit took a big hit and I felt shut out by the banks. Thanks to Plutton Legal I was able to rebuild my credit history, and now I have access to the best credit cards.",
+          "After a difficult divorce, my credit took a big hit and I felt shut out by the banks. Thanks to Pluton Legal I was able to rebuild my credit history, and now I have access to the best credit cards.",
         name: "Denise M.",
         location: "Houston, TX",
         initial: "D",
       },
       {
         quote:
-          "I needed a vehicle to get to work and couldn't get financing anywhere. After a few months of working with Plutton Legal, I drove off in a car of my own.",
+          "I needed a vehicle to get to work and couldn't get financing anywhere. After a few months of working with Pluton Legal, I drove off in a car of my own.",
         name: "James V.",
         location: "Phoenix, AZ",
         initial: "J",
@@ -392,7 +392,7 @@ const en: typeof es = {
     consent1:
       "I accept the Privacy Policy and the Terms of Service, and authorize use of my data for evaluation and follow-up.",
     consent2:
-      "I agree to receive SMS messages from Plutton Legal about my credit repair case and account updates. Approx. 4 msgs/month. Message & data rates may apply. Reply STOP to cancel, HELP for help. Consent is NOT a condition of service. See SMS Terms and Privacy.",
+      "I agree to receive SMS messages from Pluton Legal about my credit repair case and account updates. Approx. 4 msgs/month. Message & data rates may apply. Reply STOP to cancel, HELP for help. Consent is NOT a condition of service. See SMS Terms and Privacy.",
     honeypotLabel: "If you are human, leave this field empty",
     submit: "Request Free Consultation →",
     loading: "Sending…",
@@ -441,17 +441,17 @@ const en: typeof es = {
       { label: "SMS Terms", href: "#" },
       { label: "Back to top", href: "#" },
     ],
-    copyright: "© 2026 Plutton Legal. All rights reserved.",
+    copyright: "© 2026 Pluton Legal. All rights reserved.",
     disclaimer:
       "Score improvement depends on individual factors. We do not remove accurate, current, and verifiable information.",
-    sms: "SMS Program: Plutton Legal Credit Repair Alerts. STOP=cancel | HELP=help. Message rates may apply. ~4/mo.",
+    sms: "SMS Program: Pluton Legal Credit Repair Alerts. STOP=cancel | HELP=help. Message rates may apply. ~4/mo.",
   },
 
   creditCheck: {
     heading: "Check Your Credit Score First",
     subtext:
       "Knowing your score before your consultation helps us focus on what matters most. Checking your own credit never affects your score.",
-    note: "These are independent third-party services. Plutton Legal is not affiliated with or compensated by any of them.",
+    note: "These are independent third-party services. Pluton Legal is not affiliated with or compensated by any of them.",
     resources: [
       {
         name: "Experian",

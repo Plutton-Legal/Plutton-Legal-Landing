@@ -9,8 +9,8 @@ export default function Logo({ variant = "default" }: Props) {
     return (
       <div className="inline-flex bg-white rounded-lg p-1.5">
         <Image
-          src="/img/plutton_legal.jpeg"
-          alt="Plutton Legal"
+          src="/img/pluton_legal.jpeg"
+          alt="Pluton Legal"
           width={640}
           height={640}
           sizes="40px"
@@ -22,8 +22,8 @@ export default function Logo({ variant = "default" }: Props) {
 
   return (
     <Image
-      src="/img/plutton_legal.jpeg"
-      alt="Plutton Legal"
+      src="/img/pluton_legal.jpeg"
+      alt="Pluton Legal"
       width={640}
       height={640}
       sizes="(max-width: 768px) 48px, 56px"

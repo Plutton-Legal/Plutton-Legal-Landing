@@ -13,9 +13,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Plutton Legal — Mejor Crédito, Mejor Vida",
+  title: "Pluton Legal — Mejor Crédito, Mejor Vida",
   description:
-    "Plutton Legal te ayuda a disputar errores en tu reporte de crédito bajo las protecciones de la ley federal.",
+    "Pluton Legal te ayuda a disputar errores en tu reporte de crédito bajo las protecciones de la ley federal.",
 };
 
 export default function RootLayout({
